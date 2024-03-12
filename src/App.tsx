@@ -16,21 +16,34 @@ const App = () => {
   const pastDays = calculateDates(date);
 
   return (
-    <div className="root">
-      <div className="title-wrapper">
-        <h2 className="root__title">
-          Bugun <span className="root__title-crimson">{year}</span>-yilning{" "}
-          <span className="root__title-orange">{pastDays}</span>-kuni
-        </h2>
-        <h3 className="root__heading">
-          (yangi yilgacha {isLeapYear(date.getFullYear()) - pastDays} kun qoldi)
-        </h3>
-      </div>
-      <div className="frame">
-        <Form {...{ updateState }} />
-        {state.date && <CalcedDays {...state} />}
-      </div>
-    </div>
+    <>
+      <main className="root">
+        <div className="title-wrapper">
+          <h2 className="root__title">
+            Bugun <span className="root__title-crimson">{year}</span>-yilning{" "}
+            <span className="root__title-orange">{pastDays}</span>-kuni
+          </h2>
+          <h3 className="root__heading">
+            (yangi yilgacha {isLeapYear(date.getFullYear()) - pastDays} kun qoldi)
+          </h3>
+        </div>
+        <div className="frame">
+          <Form {...{ updateState }} />
+          {state.date && <CalcedDays {...state} />}
+        </div>
+      </main>
+      <footer>
+        <a className="link" href="https://t.me/+XFeFrIkLcBU1MGE6">
+          <img
+            src="https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWFpKU3RLQk1nMzVweFgzcGJJWUxZMGh1SmEifQ?width=400"
+            width={25}
+            height={25}
+            alt="avatar"
+          />
+          <span>link for channel</span>
+        </a>
+      </footer>
+    </>
   );
 };
 
