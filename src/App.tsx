@@ -1,6 +1,3 @@
-import months from "./data/months.json";
-import isLeapYear from "./utils/isLeapYear";
-
 import * as Types from "./interfaces";
 import Form from "./components/Form";
 import { useState } from "react";
