@@ -1,9 +1,9 @@
-const isLeapYear = (year: number, trueDays: number = 366, falseDays: number = 365) => {
+const isLeapYear = (year: number, trueValue: number = 366, falseValue: number = 365) => {
   if (year % 400 === 0) {
-    return trueDays;
+    return trueValue;
   } else if (year % 4 === 0 && year % 100 !== 0) {
-    return trueDays;
-  } else return falseDays;
+    return trueValue;
+  } else return falseValue;
 };
 
 export default isLeapYear;
