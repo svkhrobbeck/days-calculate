@@ -1,15 +1,14 @@
-import * as Types from "./interfaces";
-import Form from "./components/Form";
 import { useState } from "react";
-import CalcedDays from "./components/CalcedDays";
-import calculateDates from "./utils/calculateDates";
+
+import * as Types from "./interfaces";
 import isLeapYear from "./utils/isLeapYear";
+import calculateDates from "./utils/calculateDates";
+
+import { CalcedDays, Footer, Form } from "./components";
 
 const App = () => {
   const [state, setState] = useState<Types.Months.IState>({ year: null, month: null, date: null });
   const updateState = (data: Types.Months.IState) => setState(data);
-
-  calculateDates("15 march");
 
   const date = new Date();
   const year = date.getFullYear();
@@ -32,17 +31,8 @@ const App = () => {
           {state.date && <CalcedDays {...state} />}
         </div>
       </main>
-      <footer>
-        <a className="link" href="https://t.me/+XFeFrIkLcBU1MGE6">
-          <img
-            src="https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yWFpKU3RLQk1nMzVweFgzcGJJWUxZMGh1SmEifQ?width=400"
-            width={25}
-            height={25}
-            alt="avatar"
-          />
-          <span>link for channel</span>
-        </a>
-      </footer>
+
+      <Footer />
     </>
   );
 };

@@ -1,6 +1,7 @@
-import months from "../data/months.json";
 import * as Types from "../interfaces";
 import isLeapYear from "./isLeapYear";
+
+import months from "../data/months.json";
 
 const calculateDates = (dateStr: string | Date | number) => {
   const date = new Date(dateStr);
