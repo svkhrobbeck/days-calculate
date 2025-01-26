@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer>
       <a className="link" href={`https://t.me/${import.meta.env.VITE_USERNAME!}`}>
-        {imgUrl ?? <img src={imgUrl} width={25} height={25} alt="avatar" />}
+        {imgUrl ? <img src={imgUrl} width={25} height={25} alt="avatar" /> : ""}
         <span>author</span>
       </a>
     </footer>
