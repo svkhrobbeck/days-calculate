@@ -1,8 +1,10 @@
 import { FC } from "react";
-import months from "../data/months.json";
+
 import * as Types from "../interfaces";
 import isLeapYear from "../utils/isLeapYear";
 import calculateDates from "../utils/calculateDates";
+
+import months from "../data/months.json";
 
 const CalcedDays: FC<Types.Months.IState> = ({ date, month, year }) => {
   const specialDateStr = `${date} ${month} ${year}`;
