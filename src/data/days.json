@@ -1,0 +1,65 @@
+[
+  {
+    "order": 1,
+    "name": {
+      "uz": "Dushanba",
+      "oz": "Душанба",
+      "ru": "Понедельник",
+      "en": "Monday"
+    }
+  },
+  {
+    "order": 2,
+    "name": {
+      "uz": "Seshanba",
+      "oz": "Сешанба",
+      "ru": "Вторник",
+      "en": "Tuesday"
+    }
+  },
+  {
+    "order": 3,
+    "name": {
+      "uz": "Chorshanba",
+      "oz": "Чоршанба",
+      "ru": "Среда",
+      "en": "Wednesday"
+    }
+  },
+  {
+    "order": 4,
+    "name": {
+      "uz": "Payshanba",
+      "oz": "Пайшанба",
+      "ru": "Четверг",
+      "en": "Thursday"
+    }
+  },
+  {
+    "order": 5,
+    "name": {
+      "uz": "Juma",
+      "oz": "Жума",
+      "ru": "Пятница",
+      "en": "Friday"
+    }
+  },
+  {
+    "order": 6,
+    "name": {
+      "uz": "Shanba",
+      "oz": "Шанба",
+      "ru": "Суббота",
+      "en": "Saturday"
+    }
+  },
+  {
+    "order": 0,
+    "name": {
+      "uz": "Yakshanba",
+      "oz": "Якшанба",
+      "ru": "Воскресенье",
+      "en": "Sunday"
+    }
+  }
+]
